@@ -25,5 +25,3 @@ def is_number(x):
     :return: True if x is a number
     """
     return isinstance(x, numbers.Number)
-
-print my_sum(4,"A")
