@@ -11,8 +11,10 @@ def my_sum(a, b):
     :param b: second addend
     :return: sum of the addends
     """
-    assert (is_number(a) and is_number(b)), 'Both addends should be numbers'
-    return a - b
+    if not (is_number(a) and is_number(b)):
+        return 'Both addends should be numbers'
+    else:
+        return a + b
 
 
 def is_number(x):
@@ -23,3 +25,5 @@ def is_number(x):
     :return: True if x is a number
     """
     return isinstance(x, numbers.Number)
+
+print my_sum(4,"A")
